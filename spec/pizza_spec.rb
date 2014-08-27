@@ -12,7 +12,7 @@ describe Pizza do
       ]
       pizza = Pizza.new(toppings)
 
-      expect(pizza.toppings).to eq(Array)
+      expect(pizza.toppings).to be_a(Array)
     end
     it 'defaults the toppings to cheese only if the pizza has no toppings' do
       pizza = Pizza.new
